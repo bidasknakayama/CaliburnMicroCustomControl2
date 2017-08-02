@@ -1,0 +1,31 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CaliburnMicroCustomControl.Controls">
+
+    <Style TargetType="local:SensorMeter">
+        <Setter Property="UseSystemFocusVisuals" Value="True"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:SensorMeter">
+                    <Viewbox>
+                        <Grid x:Name="PART_Container"
+                              Width="200"
+                              Height="200"
+                              Background="Transparent">
+
+                            <!-- PART_Title  -->
+                            <TextBlock x:Name="PART_Title"
+                                           Text="{TemplateBinding Title_Text}"
+                                           TextAlignment="Center" />
+                            <TextBlock x:Name="PART_Title2"
+                                           Text="{Binding Title_Text2}"
+                                           TextAlignment="Center" />
+                        </Grid>
+                    </Viewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
