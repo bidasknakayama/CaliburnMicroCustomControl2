@@ -45,7 +45,7 @@ namespace CaliburnMicroCustomControl.Controls
         }
         public string Title_Text2 {
             get { return _title_Text2; }
-            set { this.Set(_title_Text2); }
+            set { this.Set(_title_Text2); }  // This line has error !!
         }
 
         #endregion
